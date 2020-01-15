@@ -1,0 +1,4 @@
+<!--pages/search/index.wxml-->
+<view class="A">
+  <view class="shousuo"></view>
+</view>

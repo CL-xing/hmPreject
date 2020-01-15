@@ -6,5 +6,19 @@
 .item{
   flex: 1;
   text-align: center;
-  
+}
+.search{
+  width: 750rpx;
+  height: 100rpx;
+  background: #eb4450;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchContent{
+  width: 700rpx;
+  height: 80rpx;
+  background: #fff;
+  text-align: center;
+  line-height: 80rpx;
 }

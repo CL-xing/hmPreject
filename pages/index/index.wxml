@@ -1,8 +1,18 @@
-<view class="nav">
+<!-- <view class="nav">
   <view class="item">A</view>
   <view class="item">B</view>
   <view class="item">C</view>
   <view class="item">D</view>
+</view>
+
+<view class="hello"> hello wrold!</view> -->
+
+<view class="search">
+  <view class="searchContent">{{searchText}}</view>
+</view>
+
+<view class="nav">
+  <view class="item" wx:for="{{nav}}" wx:key="id" >{{item.name}}{{item.id}}</view>
 </view>
 
 <view class="hello"> hello wrold!</view>
