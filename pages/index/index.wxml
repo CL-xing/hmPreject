@@ -2,4 +2,7 @@
   <view class="item">A</view>
   <view class="item">B</view>
   <view class="item">C</view>
+  <view class="item">D</view>
 </view>
+
+<view class="hello"> hello wrold!</view>

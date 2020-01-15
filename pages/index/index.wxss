@@ -1,4 +1,10 @@
 .nav{
   display: flex;
-  align-items: center;
+  background: #f0f0f0;
+  padding: 10rpx;
+}
+.item{
+  flex: 1;
+  text-align: center;
+  
 }
