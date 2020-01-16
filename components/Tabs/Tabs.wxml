@@ -1,0 +1,15 @@
+<!--Tabs.wxml-->
+<!-- <view class="tab" wx:for="{{tabItems}}" :key="{{index}}">
+<navigator>
+{{item.name}}
+</navigator>
+</view> -->
+
+
+<view class="tab">
+  <view class="tabItem" wx:for="{{tabItems}}" :key="{{index}}">
+    <navigator>
+{{item.name}}
+</navigator>
+  </view>
+</view>

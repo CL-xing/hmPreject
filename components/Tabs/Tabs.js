@@ -1,10 +1,13 @@
-// components/SearchInput/SearchInput.js
+// Tabs.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-     
+      tabItems:{
+        type:Array,
+        value:[]
+      }
   },
 
   /**

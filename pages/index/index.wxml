@@ -25,3 +25,5 @@
   </swiper>
 </view>
 <!-- 轮播图结束 -->
+<Tabs tabItems="{{tabs}}"></Tabs>
+
