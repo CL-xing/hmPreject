@@ -13,3 +13,15 @@
 <!-- 自定义组件调用 -->
 <SearchInput></SearchInput>
 </view>
+
+<!-- 轮播图开始 -->
+<view class="slide">
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" indicator-color="{{rgba(255, 255, 255, .3)}}">
+    <swiper-item wx:for="{{slideshow}}" :key="goods_id" >
+    <navigator url="{{item.navigator_url}}" open-type="navigate">
+      <image src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 轮播图结束 -->
