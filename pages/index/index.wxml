@@ -25,5 +25,17 @@
   </swiper>
 </view>
 <!-- 轮播图结束 -->
+
+<!-- 买家投诉的tab栏 -->
 <Tabs tabItems="{{tabs}}"></Tabs>
+
+<!-- 导航栏开始 -->
+<view class="cate">
+<view wx:for="{{catesList}}" :key="name" class="catelist">
+<navigator url="{{item.navigator_url}}" open-type="switchTab">
+<image src="{{item.image_src}}" mode="widthFix"></image>
+</navigator>
+</view>
+</view>
+<!-- 导航栏结束 -->
 

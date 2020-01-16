@@ -23,10 +23,20 @@
   line-height: 80rpx;
 }
 
-navigator{
+.slide navigator{
   width: 100%;
   height: 340rpx;
 }
 image{
+  width: 100%;
+}
+.cate{
+  display: flex;
+}
+.cate .catelist{
+    flex: 1;
+    padding: 20rpx;
+}
+.cate navigator image{
   width: 100%;
 }

@@ -24,6 +24,8 @@ Page({
     ],
     // 轮播图数据
     slideshow: [],
+    // 导航数据
+    catesList:[],
 
     tabs: [
       {name:"体验问题"},
@@ -43,9 +45,17 @@ Page({
           slideshow: res.data.message
         })
       },
+    }),
+    wx.request({
+      url: 'https://api.zbztb.cn/api/public/v1/home/catitems',
+      success: (res)=> {
+        console.log(res)
+        this.setData({
+          catesList:res.data.message
+        })
+      },
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
