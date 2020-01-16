@@ -1,4 +1,21 @@
 /**app.wxss**/
+
+/* 全局 */
+/* 初始化样式， */
+/* 引入图片和字体图标 */
+@import '/assets/styles/iconfont.wxss';
+
+page,view,text,image,navigetor{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+page{
+  --themeColor:#eb4450;
+}
+
+
 .container {
   height: 100%;
   display: flex;
