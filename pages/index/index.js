@@ -26,6 +26,8 @@ Page({
     slideshow: [],
     // 导航数据
     catesList:[],
+    // 标题内容
+    flootList:[],
 
     tabs: [
       {name:"体验问题"},
@@ -54,6 +56,17 @@ Page({
           catesList:res.data.message
         })
       },
+    }),
+    wx.request({
+      url: 'https://api.zbztb.cn/api/public/v1/home/floordata',
+      success: (res)=> {
+        console.log(res);
+        this.setData({
+          flootList: res.data.message
+        })
+        console.log(this.data.flootList)
+      },
+     
     })
   },
   /**

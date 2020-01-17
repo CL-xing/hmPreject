@@ -1,13 +1,15 @@
-.nav{
+.nav {
   display: flex;
   background: #f0f0f0;
   padding: 10rpx;
 }
-.item{
+
+.item {
   flex: 1;
   text-align: center;
 }
-.search{
+
+.search {
   width: 750rpx;
   height: 100rpx;
   background: #eb4450;
@@ -15,7 +17,8 @@
   justify-content: center;
   align-items: center;
 }
-.searchContent{
+
+.searchContent {
   width: 700rpx;
   height: 80rpx;
   background: #fff;
@@ -23,20 +26,65 @@
   line-height: 80rpx;
 }
 
-.slide navigator{
+.slide navigator {
   width: 100%;
   height: 340rpx;
 }
-image{
+
+.slide image {
   width: 100%;
 }
-.cate{
+
+.cate {
   display: flex;
 }
-.cate .catelist{
-    flex: 1;
-    padding: 20rpx;
+
+.cate .catelist {
+  flex: 1;
+  padding: 20rpx;
 }
-.cate navigator image{
+
+.cate navigator  image {
   width: 100%;
+}
+
+/* 楼层开始 */
+.floot .flootTitle .floot_tu image {
+  width: 100%;
+}
+
+.floot .ListView navigator {
+  float: left;
+  width: 33.33%;
+}
+
+.floot .ListView .listItem:nth-last-child(-n+4) navigator  {
+  /* 232/386=33.33vw/height */
+  border-left: 10rpx solid #fff;
+  box-sizing: border-box;
+  height: 27.72vw;
+}
+
+.floot .ListView navigator image {
+  width: 100%;
+  height: 100%;
+}
+.floot .ListView .listItem:nth-child(1) navigator{
+  border-left: 10rpx solid transparent;
+  box-sizing: border-box;
+}
+.floot .ListView .listItem:nth-child(2) navigator{
+  border-bottom: 10rpx solid transparent;
+}
+.floot .ListView .listItem:nth-child(3) navigator{
+  border-bottom: 10rpx solid transparent;
+  border-right:10rpx solid transparent;
+}
+.floot .ListView .listItem:nth-child(4) navigator{
+  border-right:10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
+}
+.floot .ListView .listItem:nth-child(5) navigator{
+  border-right:10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
 }

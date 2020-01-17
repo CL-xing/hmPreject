@@ -10,17 +10,17 @@
 <view class="hello"> hello wrold!</view> -->
 
 <view class="hm_index">
-<!-- 自定义组件调用 -->
-<SearchInput></SearchInput>
+  <!-- 自定义组件调用 -->
+  <SearchInput></SearchInput>
 </view>
 
 <!-- 轮播图开始 -->
 <view class="slide">
   <swiper indicator-dots="{{true}}" autoplay="{{true}}" indicator-color="{{rgba(255, 255, 255, .3)}}">
-    <swiper-item wx:for="{{slideshow}}" :key="goods_id" >
-    <navigator url="{{item.navigator_url}}" open-type="navigate">
-      <image src="{{item.image_src}}" mode="widthFix"></image>
-    </navigator>
+    <swiper-item wx:for="{{slideshow}}" :key="goods_id">
+      <navigator url="{{item.navigator_url}}" open-type="navigate">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
     </swiper-item>
   </swiper>
 </view>
@@ -31,11 +31,29 @@
 
 <!-- 导航栏开始 -->
 <view class="cate">
-<view wx:for="{{catesList}}" :key="name" class="catelist">
-<navigator url="{{item.navigator_url}}" open-type="switchTab">
-<image src="{{item.image_src}}" mode="widthFix"></image>
-</navigator>
-</view>
+  <view wx:for="{{catesList}}" :key="name" class="catelist">
+    <navigator url="{{item.navigator_url}}" open-type="switchTab">
+      <image src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+  </view>
 </view>
 <!-- 导航栏结束 -->
 
+<!-- 楼层内容开始 -->
+<view class="floot">
+  <!-- 标题 -->
+  <view class="flootTitle" wx:for="{{flootList}}" wx:key="index1" wx:for-index="index1" wx:for-item="item1">
+    <view class="floot_tu">
+      <image mode="widthFix" src="{{item1.floor_title.image_src}}"></image>
+    </view>
+    <!-- 内容 -->
+    <view class="ListView">
+      <view class="listItem" wx:for="{{item1.product_list}}" wx:key="name" wx:for-index="index2" wx:for-item="item2">
+        <navigator url="{{item2.navigator_url}}" open-type="navigate">
+          <image src="{{item2.image_src}}" mode="{{index2===0 ? 'widthFix':'scaleToFill'}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 楼层内容结束 -->
